@@ -1,0 +1,169 @@
+{
+  "title": "Peer Feedback",
+  "pages": [
+    {
+      "name": "Collaboration & Teamwork",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q1_collaboration",
+          "title": "Collaboration & Teamwork: Worked as a true team player seeking inputs and collaboration from team members",
+          "rateValues": [
+            { "value": 1, "text": "Strongly Disagree" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Strongly Agree" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q1_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Communication",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q2_communication",
+          "title": "Communicated with team members in a clear, concise and structured manner",
+          "rateValues": [
+            { "value": 1, "text": "Unhappy" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Delighted" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q2_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Leadership",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q3_leadership",
+          "title": "Took initiative in leading team for tasks to be accomplished and recognized team members for their contributions",
+          "rateValues": [
+            { "value": 1, "text": "Strongly Disagree" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Strongly Agree" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q3_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Ownership",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q4_ownership",
+          "title": "Took ownership of delivering high-quality work output and results for project and tasks",
+          "rateValues": [
+            { "value": 1, "text": "Strongly Disagree" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Strongly Agree" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q4_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Analytical Thinking",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q5_analytical_thinking",
+          "title": "Understood task objectives and context before execution, and applied acquired knowledge and skills for better project execution",
+          "rateValues": [1, 2, 3, 4, 5],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q5_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Innovative Thinking",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q6_innovative_thinking",
+          "title": "Came up with new, innovative ideas and solutions to challenges presented within project or tasks",
+          "rateValues": [
+            { "value": 1, "text": "Strongly Disagree" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Strongly Agree" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q6_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Recognition",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "recognition",
+          "title": "Give a Kudos to this talent",
+          "choices": [
+            { "value": "kudos", "text": "Kudos" },
+            { "value": "na", "text": "NA" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "recognition_comment",
+          "title": "Your comment (Required)",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "showProgressBar": "top",
+  "progressBarType": "buttons",
+  "completeText": "Submit Feedback"
+}

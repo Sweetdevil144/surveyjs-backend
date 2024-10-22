@@ -1,0 +1,145 @@
+{
+  "title": "User Feedback : Trumio",
+  "description": "Please provide your feedback",
+  "pages": [
+    {
+      "title": "Page 1: Satisfaction and Experience",
+      "description": "Collaboration & Teamwork",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "satisfaction",
+          "title": "How satisfied are you with our product?",
+          "isRequired": true,
+          "rateValues": [1, 2, 3, 4, 5]
+        },
+        {
+          "type": "comment",
+          "name": "dislikeImprovements",
+          "title": "What improvements can be made from our side?",
+          "visibleIf": "{satisfaction} <= 2",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "generalImprovements",
+          "title": "What can we improve to enhance your experience?",
+          "visibleIf": "{satisfaction} <= 4 && {satisfaction} > 2",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "favoriteFeature",
+          "title": "Which feature did you love the most?",
+          "visibleIf": "{satisfaction} > 4",
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "title": "Page 2: Feature Usage and Trumio Knowledge",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "featuresUsed",
+          "title": "Which features have you used?",
+          "api": "http://localhost:3000/api/choices",
+          "isRequired": true
+        },
+        {
+          "type": "dropdown",
+          "name": "frequencyOfUse",
+          "title": "How often do you use Trumio?",
+          "choices": ["Daily", "Weekly", "Monthly", "Rarely"],
+          "isRequired": true
+        },
+        {
+          "name": "heardAboutUs",
+          "type": "text",
+          "title": "When did you hear about Trumio?",
+          "inputType": "date",
+          "isRequired": true
+        },
+        {
+          "type": "rating",
+          "name": "aiFeatureSatisfaction",
+          "title": "How satisfied are you with our AI-powered features?",
+          "rateValues": [1, 2, 3, 4, 5],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "ai-dislikeImprovements",
+          "title": "What improvements can be made from our side?",
+          "visibleIf": "{aiFeatureSatisfaction} <= 2",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "ai-generalImprovements",
+          "title": "What can we improve to enhance your experience?",
+          "visibleIf": "{aiFeatureSatisfaction} <= 4 && {aiFeatureSatisfaction} > 2",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "ai-favoriteFeature",
+          "title": "Which feature did you love the most?",
+          "visibleIf": "{aiFeatureSatisfaction} > 4",
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "title": "Page 3: Feedback and Future Participation",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "featureRatings",
+          "title": "Please rate the following features:",
+          "columns": [
+            "Very Unsatisfied",
+            "Unsatisfied",
+            "Neutral",
+            "Satisfied",
+            "Very Satisfied"
+          ],
+          "rows": [
+            { "value": "aiAssistance", "text": "AI Assistance" },
+            { "value": "projectCollab", "text": "Project Collaboration" },
+            { "value": "secureWorkspace", "text": "Secure Workspace" },
+            { "value": "flexternships", "text": "Flexternships" }
+          ]
+        },
+        {
+          "type": "ranking",
+          "name": "featurePriority",
+          "title": "Rank the following features based on their importance to you:",
+          "choices": [
+            "AI Assistance",
+            "Project Collaboration",
+            "Secure Workspace",
+            "Flexternships"
+          ]
+        },
+        {
+          "type": "comment",
+          "name": "futureSuggestions",
+          "title": "Any suggestions for new features or improvements?"
+        },
+        {
+          "type": "file",
+          "name": "uploadFile",
+          "title": "Upload any relevant documents or screenshots (optional):"
+        },
+        {
+          "type": "boolean",
+          "name": "futureParticipation",
+          "title": "Would you like to participate in future feedback sessions?",
+          "labelTrue": "Yes",
+          "labelFalse": "No"
+        }
+      ]
+    }
+  ]
+}

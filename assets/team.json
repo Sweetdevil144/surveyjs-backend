@@ -1,0 +1,127 @@
+{
+  "title": "Team Feedback",
+  "pages": [
+    {
+      "name": "Completeness",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q1_completeness",
+          "title": "Team delivered completely and holistically for the committed tasks in the current milestone",
+          "rateValues": [
+            { "value": 1, "text": "Unhappy" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Delighted" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q1_comments",
+          "title": "Please provide additional feedback",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Quality of Deliverables",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q2_quality_of_deliverables",
+          "title": "Team delivered high-quality output for the committed tasks in the current milestone",
+          "rateValues": [
+            { "value": 1, "text": "Unhappy" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Delighted" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q2_comments",
+          "title": "Please provide additional feedback",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Timeliness",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q3_timeliness",
+          "title": "Team consistently delivered tasks and outputs on the agreed upon timelines without intentional delays",
+          "rateValues": [1, 2, 3, 4, 5],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q3_comments",
+          "title": "Please provide additional feedback",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Innovation",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q4_innovation",
+          "title": "Team showed innovative and out-of-the-box thinking while working on the committed tasks in the current milestone",
+          "rateValues": [
+            { "value": 1, "text": "Strongly Disagree" },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5, "text": "Strongly Agree" }
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q4_comments",
+          "title": "Please provide additional feedback",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Top Leaders",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "top_leaders",
+          "title": "Identify one or more team members who displayed leadership qualities within the current milestone",
+          "choices": [
+            "Talent 1 Name",
+            "Talent 2 Name",
+            "Talent 3 Name"
+          ],
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "elements": [
+        {
+          "type": "comment",
+          "name": "qualitative_feedback",
+          "title": "Qualitative feedback on Team Performance",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "showProgressBar": "top",
+  "progressBarType": "buttons",
+  "completeText": "Submit Feedback"
+}

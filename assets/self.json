@@ -1,0 +1,193 @@
+{
+  "title": "Trumio Self Feedback",
+  "pages": [
+    {
+      "name": "Collaboration & Teamwork",
+      "description": "Collaboration & Teamwork",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q1_collaboration",
+          "title": "You worked as a true team player seeking inputs and collaboration from your manager and team members",
+          "rateType": "stars",
+          "displayMode": "buttons",
+          "rateValues": [
+            { "value": 1 },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5 }
+          ],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q1_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "placeholder": "Please type here",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Communication",
+      "description": "Communication",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q2_communicaion",
+          "title": "You communicated with your manager and team members in a clear, concise and structured manner",
+          "isRequired": true,
+          "rateType": "smileys",
+          "autoGenerate": false,
+          "rateValues": [1, 2, 3, 4, 5],
+          "minDecriptionValue": "Unhappy",
+          "maxDecriptionValue": "Delighted",
+          "rateMax": 10
+        },
+        {
+          "type": "comment",
+          "name": "q2_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "placeholder": "Please type here",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Leadership",
+      "description": "Leadership",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q3_leadership",
+          "rateType": "stars",
+          "displayMode": "buttons",
+          "title": "Took initiative in leading team for tasks to be accomplished and recognized team members for their contributions",
+          "rateValues": [1, 2, 3, 4, 5],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q3_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "placeholder": "Please type here",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Ownership",
+      "description": "Ownership",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q4_ownership",
+          "title": "You took ownership of delivering high quality work output and results from yourself and your team members",
+          "rateValues": [
+            { "value": 1, "text" : "01" },
+            { "value": 2, "text" : "02" },
+            { "value": 3, "text" : "03" },
+            { "value": 4, "text" : "04" },
+            { "value": 5, "text" : "05" }
+          ],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q4_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "placeholder": "Please type here",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Analytical Thinking",
+      "description": "Analytical Thinking",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q5_analytical_thinking",
+          "title": "You understood task objectives and context before execution, and applied acquired knowledge and skills for better project execution",
+          "rateValues": [
+            { "value": 1, "text" : "01" },
+            { "value": 2, "text" : "02" },
+            { "value": 3, "text" : "03" },
+            { "value": 4, "text" : "04" },
+            { "value": 5, "text" : "05" }
+          ],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q5_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "placeholder": "Please type here",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Innovative Thinking",
+      "description": "Innovative Thinking",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q6_innovative_thinking",
+          "rateType": "stars",
+          "displayMode": "buttons",
+          "title": "Came up with new, innovative ideas and solutions to challenges presented within project or tasks",
+          "rateValues": [
+            { "value": 1 },
+            { "value": 2 },
+            { "value": 3 },
+            { "value": 4 },
+            { "value": 5 }
+          ],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "q6_comments",
+          "title": "Please provide additional feedback (Optional)",
+          "placeholder": "Please type here",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "description": "Feedback",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "satisfaction-smileys-colored",
+          "title": "Give a Kudos to this talent",
+          "labelTrue": "NA",
+          "labelFalse": "Kudos"
+        },
+        {
+          "type": "comment",
+          "name": "q7_comments",
+          "title": "Your Comments (Required)",
+          "isRequired": true,
+          "placeholder": "Please type here"
+        }
+      ]
+    }
+  ],
+  "showProgressBar": "top",
+  "progressBarType": "buttons",
+  "completeText": "Submit Feedback"
+}
