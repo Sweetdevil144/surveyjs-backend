@@ -8,6 +8,8 @@
           "type": "rating",
           "name": "q1_collaboration",
           "title": "Collaboration & Teamwork: Worked as a true team player seeking inputs and collaboration from team members",
+          "rateType": "stars",
+          "displayMode": "buttons",
           "rateValues": [1, 2, 3, 4, 5],
           "minDescriptionValue" : "Strongly Disagree",
           "maxDescriptionValue" : "Strongly Agree",
@@ -17,6 +19,7 @@
           "type": "comment",
           "name": "q1_comments",
           "title": "Please provide additional feedback (Optional)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
@@ -31,12 +34,15 @@
           "rateValues": [1, 2, 3, 4, 5],
           "minDescriptionValue" : "Unhappy",
           "maxDescriptionValue" : "Delighted",
+          "rateType": "smileys",
+          "displayMode": "buttons",
           "isRequired": false
         },
         {
           "type": "comment",
           "name": "q2_comments",
           "title": "Please provide additional feedback (Optional)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
@@ -51,12 +57,15 @@
           "rateValues": [1, 2, 3, 4, 5],
           "minDescriptionValue" : "Strongly Disagree",
           "maxDescriptionValue" : "Strongly Agree",
+          "rateType": "stars",
+          "displayMode": "buttons",
           "isRequired": false
         },
         {
           "type": "comment",
           "name": "q3_comments",
           "title": "Please provide additional feedback (Optional)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
@@ -68,7 +77,22 @@
           "type": "rating",
           "name": "q4_ownership",
           "title": "Took ownership of delivering high-quality work output and results for project and tasks",
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [{
+            "value": 1,
+            "text": "01"
+          }, {
+            "value": 2,
+            "text": "02"
+          }, {
+            "value": 3,
+            "text": "03"
+          }, {
+            "value": 4,
+            "text": "04"
+          }, {
+            "value": 5,
+            "text": "05"
+          }],
           "minDescriptionValue": "Strongly Disagree",
           "maxDescriptionValue": "Strongly Agree",
           "isRequired": false
@@ -77,6 +101,7 @@
           "type": "comment",
           "name": "q4_comments",
           "title": "Please provide additional feedback (Optional)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
@@ -88,7 +113,22 @@
           "type": "rating",
           "name": "q5_analytical_thinking",
           "title": "Understood task objectives and context before execution, and applied acquired knowledge and skills for better project execution",
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [{
+            "value": 1,
+            "text": "01"
+          }, {
+            "value": 2,
+            "text": "02"
+          }, {
+            "value": 3,
+            "text": "03"
+          }, {
+            "value": 4,
+            "text": "04"
+          }, {
+            "value": 5,
+            "text": "05"
+          }],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
           "isRequired": false
@@ -97,6 +137,7 @@
           "type": "comment",
           "name": "q5_comments",
           "title": "Please provide additional feedback (Optional)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
@@ -111,12 +152,15 @@
           "rateValues": [1, 2, 3, 4, 5],
           "minDescriptionValue" : "Strongly Disagree",
           "maxDescriptionValue" : "Strongly Agree",
+          "rateType": "stars",
+          "displayMode": "buttons",
           "isRequired": false
         },
         {
           "type": "comment",
           "name": "q6_comments",
           "title": "Please provide additional feedback (Optional)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
@@ -125,19 +169,21 @@
       "name": "Recognition",
       "elements": [
         {
-          "type": "radiogroup",
+          "type": "rating",
           "name": "recognition",
           "title": "Give a Kudos to this talent",
-          "choices": [
-            { "value": "kudos", "text": "Kudos" },
-            { "value": "na", "text": "NA" }
+          "rateValues": [
+            { "value": 1, "text": "Kudos" },
+            { "value": 2, "text": "NA" }
           ],
+          "displayMode": "buttons",
           "isRequired": false
         },
         {
           "type": "comment",
           "name": "recognition_comment",
           "title": "Your comment (Required)",
+          "placeholder" : "Please type here",
           "isRequired": false
         }
       ]
