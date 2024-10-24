@@ -11,8 +11,8 @@
           "rateType": "stars",
           "displayMode": "buttons",
           "rateValues": [1, 2, 3, 4, 5],
-          "minDescriptionValue" : "Strongly Disagree",
-          "maxDescriptionValue" : "Strongly Agree",
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
           "isRequired": false
         },
         {
@@ -32,8 +32,8 @@
           "name": "q2_communication",
           "title": "Communicated with team members in a clear, concise and structured manner",
           "rateValues": [1, 2, 3, 4, 5],
-          "minDescriptionValue" : "Unhappy",
-          "maxDescriptionValue" : "Delighted",
+          "minRateDescription": "Unhappy",
+          "maxRateDescription": "Delighted",
           "rateType": "smileys",
           "displayMode": "buttons",
           "isRequired": false
@@ -55,8 +55,8 @@
           "name": "q3_leadership",
           "title": "Took initiative in leading team for tasks to be accomplished and recognized team members for their contributions",
           "rateValues": [1, 2, 3, 4, 5],
-          "minDescriptionValue" : "Strongly Disagree",
-          "maxDescriptionValue" : "Strongly Agree",
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
           "rateType": "stars",
           "displayMode": "buttons",
           "isRequired": false
@@ -93,8 +93,8 @@
             "value": 5,
             "text": "05"
           }],
-          "minDescriptionValue": "Strongly Disagree",
-          "maxDescriptionValue": "Strongly Agree",
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
           "isRequired": false
         },
         {
@@ -150,8 +150,8 @@
           "name": "q6_innovative_thinking",
           "title": "Came up with new, innovative ideas and solutions to challenges presented within project or tasks",
           "rateValues": [1, 2, 3, 4, 5],
-          "minDescriptionValue" : "Strongly Disagree",
-          "maxDescriptionValue" : "Strongly Agree",
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
           "rateType": "stars",
           "displayMode": "buttons",
           "isRequired": false
