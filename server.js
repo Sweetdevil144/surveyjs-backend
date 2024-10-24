@@ -8,18 +8,23 @@ app.use(cors());
 const PORT = 3000;
 const names = ["John Doe", "Jane Smith", "Samuel Jackson", "Lisa Wong"];
 
+const generateRandomImage = () => {
+  return `https://picsum.photos/30/30?random=${Math.floor(Math.random() * 50)}`;
+};
 
+// Route to serve dynamic leaders
 app.get('/api/leaders', (req, res) => {
   const leaders = [];
   for (let i = 0; i < 4; i++) {
     leaders.push({
       name: names[i],
-      imageUrl: "https://picsum.photos/30/30"
+      imageUrl: generateRandomImage()
     });
   }
   res.json({ leaders });
 });
 
+// Route to serve the survey JSONs
 app.get('/api/survey/:type', (req, res) => {
   const surveyType = req.params.type;
 
