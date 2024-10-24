@@ -9,7 +9,7 @@ const PORT = 3000;
 const names = ["John Doe", "Jane Smith", "Samuel Jackson", "Lisa Wong"];
 
 const generateRandomImage = () => {
-  return `https://picsum.photos/30/30?random=${Math.floor(Math.random() * 50)}`;
+  return `https://picsum.photos/42/42?random=${Math.floor(Math.random() * 50)}`;
 };
 
 // Route to serve dynamic leaders

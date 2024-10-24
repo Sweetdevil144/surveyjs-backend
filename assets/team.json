@@ -7,21 +7,18 @@
         {
           "type": "html",
           "name": "completeness_heading",
-          "html": "<div id=\"completeness_heading\">Completeness</div>"
+          "html": "<span id=\"completeness_heading\">Completeness</span>"
         },
         {
           "type": "rating",
           "name": "q1_completeness",
           "title": "Team delivered completely and holistically for the committed tasks in the current milestone",
           "rateValues": [1, 2, 3, 4, 5],
-          "minDescriptionValue" : "Unhappy",
-          "maxDescriptionValue" : "Delighted",
-          "isRequired": false
-        },
-        {
-          "type": "comment",
-          "name": "q1_comments",
-          "title": "Please provide additional feedback",
+          "minRateDescription": "Unhappy",
+          "maxRateDescription": "Delighted",
+          "rateType": "smileys",
+          "displayMode": "buttons",
+          "showCommentArea": true,
           "isRequired": false
         }
       ]
@@ -32,25 +29,18 @@
         {
           "type": "html",
           "name": "quality_heading",
-          "html": "<div id=\"quality_heading\">Quality of Deliverables</div>"
+          "html": "<span id=\"quality_heading\">Quality of Deliverables</span>"
         },
         {
           "type": "rating",
           "name": "q2_quality_of_deliverables",
           "title": "Team delivered high-quality output for the committed tasks in the current milestone",
-          "rateValues": [
-            { "value": 1, "text": "Unhappy" },
-            { "value": 2 },
-            { "value": 3 },
-            { "value": 4 },
-            { "value": 5, "text": "Delighted" }
-          ],
-          "isRequired": false
-        },
-        {
-          "type": "comment",
-          "name": "q2_comments",
-          "title": "Please provide additional feedback",
+          "rateValues": [1, 2, 3, 4, 5],
+          "minRateDescription": "Unhappy",
+          "maxRateDescription": "Delighted",
+          "rateType": "smileys",
+          "displayMode": "buttons",
+          "showCommentArea": true,
           "isRequired": false
         }
       ]
@@ -61,21 +51,31 @@
         {
           "type": "html",
           "name": "timelines_heading",
-          "html": "<div id=\"timelines_heading\">Timelines</div>"
+          "html": "<span id=\"timelines_heading\">Timelines</span>"
         },
         {
           "type": "rating",
           "name": "q3_timeliness",
           "title": "Team consistently delivered tasks and outputs on the agreed upon timelines without intentional delays",
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [{
+            "value": 1,
+            "text": "01"
+          }, {
+            "value": 2,
+            "text": "02"
+          }, {
+            "value": 3,
+            "text": "03"
+          }, {
+            "value": 4,
+            "text": "04"
+          }, {
+            "value": 5,
+            "text": "05"
+          }],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": false
-        },
-        {
-          "type": "comment",
-          "name": "q3_comments",
-          "title": "Please provide additional feedback",
+          "showCommentArea": true,
           "isRequired": false
         }
       ]
@@ -86,25 +86,17 @@
         {
           "type": "html",
           "name": "completeness_heading",
-          "html": "<div id=\"innovation_heading\">Innovation</div>"
+          "html": "<span id=\"innovation_heading\">Innovation</span>"
         },
         {
           "type": "rating",
           "name": "q4_innovation",
           "title": "Team showed innovative and out-of-the-box thinking while working on the committed tasks in the current milestone",
-          "rateValues": [
-            { "value": 1, "text": "Strongly Disagree" },
-            { "value": 2 },
-            { "value": 3 },
-            { "value": 4 },
-            { "value": 5, "text": "Strongly Agree" }
-          ],
-          "isRequired": false
-        },
-        {
-          "type": "comment",
-          "name": "q4_comments",
-          "title": "Please provide additional feedback",
+          "rateValues": [1, 2, 3, 4, 5],
+          "minRateDescription": "Strongly Disagree",
+          "maxRateDescription": "Strongly Agree",
+          "rateType": "stars",
+          "showCommentArea": true,
           "isRequired": false
         }
       ]
@@ -115,7 +107,7 @@
         {
           "type": "html",
           "name": "completeness_heading",
-          "html": "<div id=\"top_leaders_heading\">Top Leaders</div>"
+          "html": "<span id=\"top_leaders_heading\">Top Leaders</span>"
         },
         {
           "type": "checkbox",
@@ -132,7 +124,7 @@
         {
           "type": "html",
           "name": "feedback_heading",
-          "html": "<div id=\"feedback_heading\">Feedback</div>"
+          "html": "<span id=\"feedback_heading\">Feedback</span>"
         },
         {
           "type": "comment",
