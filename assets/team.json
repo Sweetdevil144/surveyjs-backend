@@ -8,13 +8,9 @@
           "type": "rating",
           "name": "q1_completeness",
           "title": "Team delivered completely and holistically for the committed tasks in the current milestone",
-          "rateValues": [
-            { "value": 1, "text": "Unhappy" },
-            { "value": 2 },
-            { "value": 3 },
-            { "value": 4 },
-            { "value": 5, "text": "Delighted" }
-          ],
+          "rateValues": [1, 2, 3, 4, 5],
+          "minDescriptionValue" : "Unhappy",
+          "maxDescriptionValue" : "Delighted",
           "isRequired": false
         },
         {
