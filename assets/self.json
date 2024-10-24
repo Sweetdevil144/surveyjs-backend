@@ -181,7 +181,7 @@
           "type": "comment",
           "name": "q7_comments",
           "title": "Your Comments (Required)",
-          "isRequired": false
+          "isRequired": false,
           "placeholder": "Please type here"
         }
       ]
