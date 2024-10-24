@@ -5,6 +5,11 @@
       "name": "Completeness",
       "elements": [
         {
+          "type": "html",
+          "name": "completeness_heading",
+          "html": "<div id=\"completeness_heading\">Completeness</div>"
+        },
+        {
           "type": "rating",
           "name": "q1_completeness",
           "title": "Team delivered completely and holistically for the committed tasks in the current milestone",
@@ -24,6 +29,11 @@
     {
       "name": "Quality of Deliverables",
       "elements": [
+        {
+          "type": "html",
+          "name": "quality_heading",
+          "html": "<div id=\"quality_heading\">Quality of Deliverables</div>"
+        },
         {
           "type": "rating",
           "name": "q2_quality_of_deliverables",
@@ -46,8 +56,13 @@
       ]
     },
     {
-      "name": "Timeliness",
+      "name": "Timelines",
       "elements": [
+        {
+          "type": "html",
+          "name": "timelines_heading",
+          "html": "<div id=\"timelines_heading\">Timelines</div>"
+        },
         {
           "type": "rating",
           "name": "q3_timeliness",
@@ -68,6 +83,11 @@
     {
       "name": "Innovation",
       "elements": [
+        {
+          "type": "html",
+          "name": "completeness_heading",
+          "html": "<div id=\"innovation_heading\">Innovation</div>"
+        },
         {
           "type": "rating",
           "name": "q4_innovation",
@@ -93,10 +113,15 @@
       "name": "Top Leaders",
       "elements": [
         {
+          "type": "html",
+          "name": "completeness_heading",
+          "html": "<div id=\"top_leaders_heading\">Top Leaders</div>"
+        },
+        {
           "type": "checkbox",
           "name": "top_leaders",
           "title": "Identify one or more team members who displayed leadership qualities within the current milestone",
-          "api": "https://surveyjs-backend-cpov.onrender.com/api/leaders",
+          "api": "http://localhost:3000/api/leaders",
           "isRequired": false
         }
       ]
@@ -104,6 +129,11 @@
     {
       "name": "Feedback",
       "elements": [
+        {
+          "type": "html",
+          "name": "feedback_heading",
+          "html": "<div id=\"feedback_heading\">Feedback</div>"
+        },
         {
           "type": "comment",
           "name": "qualitative_feedback",
