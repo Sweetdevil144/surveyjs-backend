@@ -6,31 +6,20 @@ var app = express();
 
 app.use(cors());
 const PORT = 3000;
+const names = ["John Doe", "Jane Smith", "Samuel Jackson", "Lisa Wong"];
 
-// Function to generate random names (you can replace this with your data source)
-const generateRandomName = () => {
-  const names = ["John Doe", "Jane Smith", "Samuel Jackson", "Lisa Wong", "Michael Johnson", "Emma Davis"];
-  return names[Math.floor(Math.random() * names.length)];
-};
 
-// Function to generate random image URLs (using Picsum for this example)
-const generateRandomImage = () => {
-  return `https://picsum.photos/30/30?random=${Math.floor(Math.random() * 1000)}`;
-};
-
-// Route to serve dynamic leaders
 app.get('/api/leaders', (req, res) => {
   const leaders = [];
   for (let i = 0; i < 4; i++) {
     leaders.push({
-      name: generateRandomName(),
-      imageUrl: generateRandomImage()
+      name: names[i],
+      imageUrl: "https://picsum.photos/30/30"
     });
   }
   res.json({ leaders });
 });
 
-// Route to serve the survey JSONs
 app.get('/api/survey/:type', (req, res) => {
   const surveyType = req.params.type;
 
