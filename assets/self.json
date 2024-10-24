@@ -20,7 +20,7 @@
           ],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -39,7 +39,7 @@
           "type": "rating",
           "name": "q2_communicaion",
           "title": "You communicated with your manager and team members in a clear, concise and structured manner",
-          "isRequired": true,
+          "isRequired": false
           "rateType": "smileys",
           "autoGenerate": false,
           "rateValues": [1, 2, 3, 4, 5],
@@ -69,7 +69,7 @@
           "rateValues": [1, 2, 3, 4, 5],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -97,7 +97,7 @@
           ],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -125,7 +125,7 @@
           ],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -155,7 +155,7 @@
           ],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -181,7 +181,7 @@
           "type": "comment",
           "name": "q7_comments",
           "title": "Your Comments (Required)",
-          "isRequired": true,
+          "isRequired": false
           "placeholder": "Please type here"
         }
       ]

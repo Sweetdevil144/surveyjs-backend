@@ -17,7 +17,7 @@
           ],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         }
       ]
     },
@@ -38,7 +38,7 @@
           ],
           "minRateDescription": "Unhappy",
           "maxRateDescription": "Delighted",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -58,7 +58,7 @@
           "rateValues": [1, 2, 3, 4, 5],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -76,7 +76,7 @@
           "name": "q4_ownership",
           "title": "Took ownership of delivering quality output while pushing to deliver exceptional results from self and other team members",
           "rateValues": [1, 2, 3, 4, 5],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -94,7 +94,7 @@
           "name": "q5_analytical_thinking",
           "title": "Analyzed task objectives and context before execution and applied acquired knowledge and skills for better project execution",
           "rateValues": [1, 2, 3, 4, 5],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -118,7 +118,7 @@
             { "value": 4 },
             { "value": 5, "text": "Strongly Agree" }
           ],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -168,13 +168,13 @@
             { "value": "wow", "text": "WOW" },
             { "value": "na", "text": "NA" }
           ],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
           "name": "recognition_comment",
           "title": "Your comment (Required)",
-          "isRequired": true
+          "isRequired": false
         }
       ]
     }
