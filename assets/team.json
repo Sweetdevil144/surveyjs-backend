@@ -15,7 +15,7 @@
             { "value": 4 },
             { "value": 5, "text": "Delighted" }
           ],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -39,7 +39,7 @@
             { "value": 4 },
             { "value": 5, "text": "Delighted" }
           ],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -59,7 +59,7 @@
           "rateValues": [1, 2, 3, 4, 5],
           "minRateDescription": "Strongly Disagree",
           "maxRateDescription": "Strongly Agree",
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -83,7 +83,7 @@
             { "value": 4 },
             { "value": 5, "text": "Strongly Agree" }
           ],
-          "isRequired": true
+          "isRequired": false
         },
         {
           "type": "comment",
@@ -100,11 +100,7 @@
           "type": "checkbox",
           "name": "top_leaders",
           "title": "Identify one or more team members who displayed leadership qualities within the current milestone",
-          "choices": [
-            "Talent 1 Name",
-            "Talent 2 Name",
-            "Talent 3 Name"
-          ],
+          "api": "http://localhost:3000/api/leaders",
           "isRequired": false
         }
       ]

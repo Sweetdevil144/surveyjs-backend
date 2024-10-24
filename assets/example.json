@@ -7,6 +7,25 @@
       "description": "Collaboration & Teamwork",
       "elements": [
         {
+              "type": "radiogroup",
+              "name": "favoritePet",
+              "title": "What is your favorite pet?",
+              "choices": [
+                {
+                  "value": "dog",
+                  "text": "![Dog](https://surveyjs.io/Content/Images/examples/markdown/dog.svg,size=14x14) Dog"
+                },
+                {
+                  "value": "cat",
+                  "text": "![Cat](https://surveyjs.io/Content/Images/examples/markdown/cat.svg,size=14x14) Cat"
+                },
+                {
+                  "value": "parrot",
+                  "text": "![Parrot](https://surveyjs.io/Content/Images/examples/markdown/parrot.svg,size=14x14) Parrot"
+                }
+              ]
+            },
+        {
           "type": "rating",
           "name": "satisfaction",
           "title": "How satisfied are you with our product?",
