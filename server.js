@@ -8,6 +8,8 @@ app.use(cors());
 const PORT = 3000;
 const names = ["John Doe", "Jane Smith", "Samuel Jackson", "Lisa Wong"];
 
+const emojiNames = ['smiley_1', 'smiley_2', 'smiley_3', 'smiley_4', 'smiley_5'];
+
 const generateRandomImage = () => {
   return `https://picsum.photos/42/42?random=${Math.floor(Math.random() * 50)}`;
 };
@@ -23,6 +25,17 @@ app.get('/api/leaders', (req, res) => {
   }
   res.json({ leaders });
 });
+
+// Route to serve emojis
+app.get('/api/emojis', (req, res) => {
+  const emojis = emojiNames.map((emoji, index) => ({
+    name: `Smiley ${index + 1}`,
+    imageUrl: `/assets/emojis/${emoji}.svg`
+  }));
+  res.json({ emojis });
+});
+
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Route to serve the survey JSONs
 app.get('/api/survey/:type', (req, res) => {
