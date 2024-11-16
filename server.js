@@ -14,6 +14,10 @@ const generateRandomImage = () => {
   return `https://picsum.photos/42/42?random=${Math.floor(Math.random() * 50)}`;
 };
 
+app.get("/test", (req, res) => {
+  return res.json({success:true,message:"Hello World !!"})
+})
+
 // Route to serve dynamic leaders
 app.get('/api/leaders', (req, res) => {
   const leaders = [];
